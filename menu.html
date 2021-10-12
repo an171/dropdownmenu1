@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпадающее меню</title>
+    <style>
+        a {
+            color: #1c8dc7;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            background-color: #c2c2c2;
+            border: 1px solid #ffffff;
+            display: inline-block;
+            line-height: 105%;
+            transition: all 0.5s ease-in-out;
+        }
+
+        a:hover {
+            color: #7cc9f0;
+            background-color: #cccccc;
+        }
+
+        a:active {
+            color: #7cc9f0;
+            background-color: #555555;
+            text-decoration: underline;
+        }
+
+        a:first-letter {
+            color: #333333;
+        }
+
+        a:active:first-letter {
+            color: #eeeeee;
+        }
+
+        #menu {
+            list-style-type: none;
+            position: relative;
+        }
+
+        #menu>li {
+            display: inline-block;
+        }
+
+        .dropDown ul {
+            display: none;
+            position: absolute;
+        }
+
+        .dropDown:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        <a href="zima.html">Зима</a>
+        <a href="osen.html">Осень</a>
+        <a href="vesna.html">Весна</a>
+    </p>
+
+    <nav>
+        <ul id="menu">
+            <li class="dropDown"><a href="#">Готовые принты ▼</a>
+                <ul>
+                    <li><a href="#">День победы</a></li>
+                    <li><a href="#">Хэлуин</a></li>
+                    <li><a href="#">День рождения</a></li>
+                    <li><a href="#">Свадьба</a></li>
+                    <li><a href="#">Юбилей</a></li>
+                    <li><a href="#">Тратата</a></li>
+                </ul>
+            </li>
+            <li class="dropDown"><a href="#">Печать Вашего дизайна ▼</a>
+                <ul>
+                    <li><a href="#">Chrome</a></li>
+                    <li><a href="#">Opera</a></li>
+                    <li><a href="#">IE</a></li>
+                    <li><a href="#">Firefox</a></li>
+                    <li><a href="#">Safari</a></li>
+                </ul>
+            </li>
+            <li class="dropDown"><a href="#">Услуги копицентра ▼</a>
+                <ul>
+                    <li><a href="#">Windows</a></li>
+                    <li><a href="#">Linux</a></li>
+                    <li><a href="#">FreeBSD</a></li>
+                    <li><a href="#">Mac OS</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Оцифровка видеокассет</a></li>
+            <li><a href="#">Оптовикам</a></li>
+            <li><a href="#">Наши работы</a></li>
+            <li><a href="#">Конструктор</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+
+
+
+</body>
+
+</html>
